@@ -34,7 +34,8 @@ The prototype uses throwaway accounts and an isolated room. No living
 account, room, credentials, or device verification is used.
 
 The first Cargo member is `messenger-core`, a transport-independent library
-with generated vocabulary and trait-first operation contracts. A lock,
+with generated vocabulary, trait-first contracts, and hand-written operation
+bodies. The operation bodies have been parsed/formatted but not compiled. A lock,
 Cargo.nix, build-base feature/version registration, Rust compilation,
 runtime adapters, clients and tests remain to be completed.
 

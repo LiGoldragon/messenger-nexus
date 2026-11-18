@@ -15,5 +15,6 @@ Operation
             Refused.Refusal ]
   Configuring.[ Configured
                 Refused.Refusal ]
-  Observed.Configuration ]
+  Observing.[ Observed.Configuration
+              Refused.Refusal ] ]
 []

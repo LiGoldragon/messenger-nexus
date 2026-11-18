@@ -67,10 +67,17 @@ pub enum Configuring_Data {
 #[rustfmt::skip]
 #[derive(rkyv::Archive, rkyv::Serialize, rkyv::Deserialize, Clone, Debug, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "datom", derive(datom_codec::Datomizable, datom_codec::Composing))]
+pub enum Observing_Data {
+    Observed(messenger::Configuration),
+    Refused(messenger::Refusal),
+}
+#[rustfmt::skip]
+#[derive(rkyv::Archive, rkyv::Serialize, rkyv::Deserialize, Clone, Debug, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "datom", derive(datom_codec::Datomizable, datom_codec::Composing))]
 pub enum Outcome {
     Opening(Outcome_Opening_Data),
     Saying(Outcome_Saying_Data),
     Hearing(Outcome_Hearing_Data),
     Configuring(Configuring_Data),
-    Observed(messenger::Configuration),
+    Observing(Observing_Data),
 }
