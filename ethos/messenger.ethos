@@ -1,0 +1,11 @@
+Library
+[ flow:Address ]
+[ Subject.String
+  Text.String
+  FilePath.String
+  ThreadId.String
+  Content.[ Text
+            Image.FilePath ]
+  Thread.{ ThreadId Address Subject } ]
+[]
+[]

@@ -1,0 +1,9 @@
+Emission
+[ messenger:[ Subject Content ThreadId ] ]
+[ PostRoot.{ Subject Content }
+  PostInThread.{ ThreadId Content } ]
+[ Rooting.[ Rooted.ThreadId
+            Unrooted.Integer ]
+  Posting.[ Posted
+            Unposted.Integer ] ]
+[]
