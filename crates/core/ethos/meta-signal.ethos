@@ -1,0 +1,17 @@
+Signal
+[ flow:Address
+  messenger:[ Homeserver RoomId LivingUserId CredentialPath CryptoStorePath
+              FlowClientPath Configuration Reason ] ]
+[ Configure.Setting
+  Observe ]
+[ Configured
+  Observed.Configuration
+  Refused.Reason
+  Changed.Configuration ]
+[ Setting.[ Homeserver
+            RoomId
+            LivingUserId
+            CredentialPath
+            CryptoStorePath
+            Speaker.Address
+            FlowClientPath ] ]

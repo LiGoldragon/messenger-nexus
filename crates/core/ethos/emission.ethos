@@ -1,0 +1,13 @@
+Emission
+[ flow:Address
+  messenger:[ Subject Content ThreadId Text MatrixFailure FlowFailure ] ]
+[ PostRoot.{ Subject Content }
+  PostInThread.{ ThreadId Content }
+  Deliver.{ Address Subject Text } ]
+[ Rooting.[ Rooted.ThreadId
+            Unrooted.MatrixFailure ]
+  Posting.[ Posted
+            Unposted.MatrixFailure ]
+  Delivery.[ Delivered
+             Undelivered.FlowFailure ] ]
+[]

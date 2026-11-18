@@ -1,0 +1,5 @@
+Memory
+[ messenger:[ Thread Configuration Reason ] ]
+[ State.{ Vector<Thread> Configuration }
+  Change.[ Succeeded
+           Failed.Reason ] ]

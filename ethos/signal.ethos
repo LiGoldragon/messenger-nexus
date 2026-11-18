@@ -1,9 +1,0 @@
-Signal
-[ messenger:[ Subject Content ThreadId ] ]
-[ Open.{ Subject Content }
-  Say.{ ThreadId Content } ]
-[ Opened.ThreadId
-  Said
-  Refused.[ UnknownThread.ThreadId
-            Unreachable ] ]
-[]

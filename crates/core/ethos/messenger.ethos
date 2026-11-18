@@ -1,0 +1,46 @@
+Library
+[ flow:Address ]
+[ Subject.String
+  Text.String
+  FilePath.String
+  ThreadId.String
+  Content.[ Text
+            Image.FilePath ]
+  Thread.{ ThreadId Address Subject }
+  Homeserver.String
+  RoomId.String
+  LivingUserId.String
+  CredentialPath.String
+  CryptoStorePath.String
+  FlowClientPath.String
+  Configuration.{ Option<Homeserver>
+                  Option<RoomId>
+                  Option<LivingUserId>
+                  Option<CredentialPath>
+                  Option<CryptoStorePath>
+                  Option<Address>
+                  Option<FlowClientPath> }
+  ; Tentative SDK failure taxonomy, ruled by Opus; no synthetic exit codes.
+  MatrixFailure.[ Unreachable
+                  Forbidden
+                  UnknownRoom
+                  Encryption
+                  Other.String ]
+  ExitStatus.Integer
+  FlowFailure.[ Exited.ExitStatus
+                Signalled
+                Unstarted.String
+                Refused.String ]
+  Reason.String
+  Refusal.[ UnknownThread.ThreadId
+            Unconfigured
+            UnsupportedContent
+            MatrixFailure
+            FlowFailure
+            Memory.Reason ]
+  PlaceName.String
+  RuntimePath.String
+  StatePath.String
+  Place.{ PlaceName RuntimePath StatePath } ]
+[]
+[]

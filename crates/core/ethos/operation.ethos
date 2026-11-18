@@ -1,0 +1,19 @@
+Operation
+[ flow:Address
+  messenger:[ Subject Content ThreadId Refusal Configuration ]
+  meta_signal:Setting ]
+[ Opening.{ Address Subject Content }
+  Saying.{ ThreadId Content }
+  Hearing.{ Option<ThreadId> Content }
+  Configuring.Setting
+  Observing ]
+[ Opening.[ Opened.ThreadId
+            Refused.Refusal ]
+  Saying.[ Said
+           Refused.Refusal ]
+  Hearing.[ Delivered
+            Refused.Refusal ]
+  Configuring.[ Configured
+                Refused.Refusal ]
+  Observed.Configuration ]
+[]

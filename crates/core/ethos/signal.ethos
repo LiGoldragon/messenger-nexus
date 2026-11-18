@@ -1,0 +1,12 @@
+Signal
+[ flow:Address
+  messenger:[ Subject Content ThreadId Refusal ] ]
+; Tentative prototype stand-in for process-derived caller identity, ruled by Opus.
+[ Open.{ Address Subject Content }
+  Say.{ ThreadId Content }
+  Heard.{ Option<ThreadId> Content } ]
+[ Opened.ThreadId
+  Said
+  HeardAccepted
+  Refused.Refusal ]
+[]
