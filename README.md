@@ -1,16 +1,16 @@
 # Messenger Nexus research prototype
 
-An isolated implementation of MessengerNexus.1: a Matrix room, one thread
+An isolated implementation of MessengerNexus.2: a Matrix room, one thread
 per subject, with each thread owned by the flow that opened it. Room-level
-messages go to the configured speaker. Matrix SDK event handlers receive
+messages go to the configured Communicator. Matrix SDK event handlers receive
 messages; a server-held sync connection supplies events.
 
 ## Contract checkpoint
 
 The six schemas under `crates/core/ethos/` describe Library, ordinary and
 meta Signal, Operation, Memory, and Emission. They build on the design at
-`/home/li/primary/flows/1e2133/proposals/messenger-nexus.md`.
-All three pass `Check` and `Generate` with published Ethos Zero 30.1.0.
+`/home/li/primary/flows/1e2133/proposals/messenger-nexus-2.md`.
+All six pass `Check` and `Generate` with published Ethos Zero 30.1.0.
 Generated Rust is committed under `crates/core/src/generated/`.
 Generation alone does not prove Rust compilation. `operations.rs` declares
 the runtime capability contracts before their implementations.

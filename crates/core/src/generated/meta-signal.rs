@@ -13,7 +13,7 @@ pub enum Setting {
     LivingUserId(messenger::LivingUserId),
     CredentialPath(messenger::CredentialPath),
     CryptoStorePath(messenger::CryptoStorePath),
-    Speaker(flow::Address),
+    Communicator(flow::Address),
     FlowClientPath(messenger::FlowClientPath),
 }
 #[rustfmt::skip]

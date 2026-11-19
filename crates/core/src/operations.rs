@@ -208,7 +208,7 @@ impl<Memory: Remembering, Emission> Configuring for Messenger<Memory, Emission> 
             Setting::LivingUserId(value) => configuration.living_user_id_option = Some(value),
             Setting::CredentialPath(value) => configuration.credential_path_option = Some(value),
             Setting::CryptoStorePath(value) => configuration.crypto_store_path_option = Some(value),
-            Setting::Speaker(value) => configuration.address_option = Some(value),
+            Setting::Communicator(value) => configuration.address_option = Some(value),
             Setting::FlowClientPath(value) => configuration.flow_client_path_option = Some(value),
         }
         match self.memory.replace(state) {

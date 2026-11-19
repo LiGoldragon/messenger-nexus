@@ -13,5 +13,5 @@ Signal
             LivingUserId
             CredentialPath
             CryptoStorePath
-            Speaker.Address
+            Communicator.Address
             FlowClientPath ] ]
